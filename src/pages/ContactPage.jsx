@@ -55,6 +55,15 @@ const ContactPage = () => {
           service: '',
           message: ''
         });
+        
+        // Track successful form submission
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'form_submit', {
+            event_category: 'Contact',
+            event_label: 'Contact Form',
+            value: 1
+          });
+        }
       } else {
         throw new Error('Form submission failed');
       }

@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Streamline Consultech Private Limited",
+  "description": "Technology-driven organization specializing in AI-powered digital agents, enterprise cloud systems, and custom business automation platforms.",
+  "url": "https://slconsultech.github.io",
+  "logo": "https://slconsultech.github.io/assets/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+94-11-234-5678",
+    "contactType": "customer service",
+    "email": "info@slconsultech.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Business District",
+    "addressLocality": "Colombo",
+    "addressCountry": "Sri Lanka",
+    "postalCode": "00100"
+  },
+  "sameAs": [
+    "https://linkedin.com/company/slconsultech",
+    "https://twitter.com/slconsultech",
+    "https://github.com/slconsultech"
+  ],
+  "foundingDate": "2010",
+  "numberOfEmployees": "25-50",
+  "industry": "Technology Services",
+  "services": [
+    "AI Agents & Automation",
+    "Cloud Enterprise Solutions", 
+    "Software Development & Integration",
+    "Consulting & Digital Transformation"
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Manufacturing & Production",
+    "description": "Optimizing production lines with AI-driven monitoring, predictive maintenance, and real-time KPI tracking.",
+    "icon": "Factory",
+    "solutions": [
+      "Production Monitoring Systems",
+      "Quality Control Automation",
+      "Supply Chain Optimization",
+      "Predictive Maintenance"
+    ]
+  },
+  {
+    "name": "Aviation & Aerospace",
+    "description": "Advanced flight operations management, maintenance tracking, and passenger experience optimization.",
+    "icon": "Plane",
+    "solutions": [
+      "Flight Operations Management",
+      "Aircraft Maintenance Tracking",
+      "Passenger Analytics",
+      "Safety Compliance Systems"
+    ]
+  },
+  {
+    "name": "Logistics & Transportation",
+    "description": "Streamlining logistics operations with route optimization, fleet management, and real-time tracking.",
+    "icon": "Truck",
+    "solutions": [
+      "Route Optimization",
+      "Fleet Management Systems",
+      "Real-time Tracking",
+      "Inventory Management"
+    ]
+  },
+  {
+    "name": "Financial Services",
+    "description": "Enhancing financial operations with automated processing, risk assessment, and compliance monitoring.",
+    "icon": "Banknote",
+    "solutions": [
+      "Automated Trading Systems",
+      "Risk Management Platforms",
+      "Compliance Monitoring",
+      "Customer Analytics"
+    ]
+  },
+  {
+    "name": "Healthcare & Life Sciences",
+    "description": "Improving patient care through digital health solutions, medical data analytics, and operational efficiency.",
+    "icon": "Heart",
+    "solutions": [
+      "Electronic Health Records",
+      "Medical Imaging Analysis",
+      "Patient Management Systems",
+      "Clinical Trial Management"
+    ]
+  },
+  {
+    "name": "Retail & E-commerce",
+    "description": "Driving customer engagement and operational efficiency through personalized experiences and inventory optimization.",
+    "icon": "ShoppingCart",
+    "solutions": [
+      "Customer Analytics",
+      "Inventory Optimization",
+      "Personalization Engines",
+      "Supply Chain Management"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "title": "FactoryPro 360 - Operations Command Suite",
+    "description": "Comprehensive manufacturing operations management platform with real-time monitoring, KPI tracking, and predictive analytics.",
+    "category": "Manufacturing Automation",
+    "technologies": ["React", "Node.js", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
+    "image": "/assets/projects/factorypro.jpg",
+    "link": "/projects/factorypro",
+    "highlights": [
+      "Real-time production monitoring",
+      "Predictive maintenance alerts",
+      "KPI dashboard and analytics",
+      "Mobile-responsive interface"
+    ],
+    "outcome": "40% improvement in operational efficiency and 25% reduction in downtime"
+  },
+  {
+    "title": "OMS KPI AI Chat Agent",
+    "description": "Revolutionary AI-powered chat agent providing conversational access to manufacturing KPIs with natural language processing.",
+    "category": "AI Solutions",
+    "technologies": ["OpenAI GPT", "LangChain", "FastAPI", "React", "PostgreSQL"],
+    "image": "/assets/projects/oms-kpi.jpg",
+    "link": "/projects/oms-kpi",
+    "highlights": [
+      "Natural language KPI queries",
+      "Real-time data integration",
+      "Voice and text interfaces",
+      "Multi-language support"
+    ],
+    "outcome": "60% faster decision-making and 50% reduction in report generation time"
+  },
+  {
+    "title": "TextBridge SMS Gateway Suite",
+    "description": "Enterprise SMS gateway solution enabling seamless integration of SMS messaging into business workflows.",
+    "category": "Communication Solutions",
+    "technologies": ["Android", "Java", "Spring Boot", "MySQL", "REST APIs"],
+    "image": "/assets/projects/textbridge.jpg",
+    "link": "/projects/textbridge",
+    "highlights": [
+      "Multi-carrier SMS routing",
+      "Delivery status tracking",
+      "Bulk messaging capabilities",
+      "API integration"
+    ],
+    "outcome": "99.9% message delivery rate and 80% cost reduction in SMS operations"
+  },
+  {
+    "title": "Cloud-Native Microservices Platform",
+    "description": "Scalable microservices architecture for enterprise applications with automated deployment and monitoring.",
+    "category": "Cloud Solutions",
+    "technologies": ["Kubernetes", "Docker", "Istio", "Prometheus", "Grafana", "Helm"],
+    "image": "/assets/projects/microservices.jpg",
+    "link": "/projects/microservices",
+    "highlights": [
+      "Auto-scaling capabilities",
+      "Service mesh implementation",
+      "Comprehensive monitoring",
+      "CI/CD pipeline integration"
+    ],
+    "outcome": "300% improvement in deployment speed and 99.99% uptime"
+  },
+  {
+    "title": "AI-Powered Document Processing",
+    "description": "Intelligent document analysis and processing system using machine learning for automated data extraction.",
+    "category": "AI Solutions",
+    "technologies": ["Python", "TensorFlow", "OpenCV", "FastAPI", "MongoDB"],
+    "image": "/assets/projects/document-ai.jpg",
+    "link": "/projects/document-ai",
+    "highlights": [
+      "OCR and text extraction",
+      "Document classification",
+      "Data validation and verification",
+      "Workflow automation"
+    ],
+    "outcome": "90% reduction in manual data entry and 95% accuracy in document processing"
+  },
+  {
+    "title": "Enterprise Dashboard & Analytics",
+    "description": "Comprehensive business intelligence platform with real-time dashboards and advanced analytics capabilities.",
+    "category": "Business Intelligence",
+    "technologies": ["React", "D3.js", "Python", "Apache Kafka", "Elasticsearch"],
+    "image": "/assets/projects/dashboard.jpg",
+    "link": "/projects/dashboard",
+    "highlights": [
+      "Real-time data visualization",
+      "Customizable dashboards",
+      "Predictive analytics",
+      "Mobile-responsive design"
+    ],
+    "outcome": "50% improvement in data-driven decision making and 30% faster insights"
+  }
+]

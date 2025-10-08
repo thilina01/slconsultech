@@ -1,0 +1,78 @@
+[
+  {
+    "title": "AI Agents & Automation",
+    "description": "Intelligent digital agents that automate complex business processes, enhance customer interactions, and optimize operational efficiency.",
+    "icon": "Bot",
+    "features": [
+      "Conversational AI Chatbots",
+      "Process Automation Workflows", 
+      "Intelligent Document Processing",
+      "Predictive Analytics & Insights",
+      "Natural Language Processing",
+      "Machine Learning Models"
+    ],
+    "benefits": [
+      "24/7 Automated Operations",
+      "Reduced Manual Errors",
+      "Enhanced Customer Experience",
+      "Scalable Business Processes"
+    ]
+  },
+  {
+    "title": "Cloud Enterprise Solutions",
+    "description": "Comprehensive cloud infrastructure and platform solutions designed for enterprise-scale operations and security.",
+    "icon": "Cloud",
+    "features": [
+      "Multi-Cloud Architecture",
+      "Microservices Development",
+      "Container Orchestration",
+      "API Gateway Management",
+      "Database Optimization",
+      "Security & Compliance"
+    ],
+    "benefits": [
+      "Scalable Infrastructure",
+      "Cost Optimization",
+      "Enhanced Security",
+      "Global Accessibility"
+    ]
+  },
+  {
+    "title": "Software Development & Integration",
+    "description": "Custom software solutions and seamless integration services to modernize your existing systems.",
+    "icon": "Code",
+    "features": [
+      "Full-Stack Development",
+      "Legacy System Modernization",
+      "API Development & Integration",
+      "Mobile Application Development",
+      "DevOps Implementation",
+      "Quality Assurance & Testing"
+    ],
+    "benefits": [
+      "Customized Solutions",
+      "Improved System Performance",
+      "Reduced Maintenance Costs",
+      "Future-Proof Architecture"
+    ]
+  },
+  {
+    "title": "Consulting & Digital Transformation",
+    "description": "Strategic consulting services to guide your organization through digital transformation and technology adoption.",
+    "icon": "Users",
+    "features": [
+      "Digital Strategy Planning",
+      "Technology Assessment",
+      "Change Management",
+      "Training & Knowledge Transfer",
+      "Process Optimization",
+      "ROI Analysis & Reporting"
+    ],
+    "benefits": [
+      "Strategic Technology Roadmap",
+      "Reduced Implementation Risks",
+      "Accelerated Digital Adoption",
+      "Measurable Business Outcomes"
+    ]
+  }
+]

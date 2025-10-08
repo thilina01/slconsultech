@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title><%= title %></title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="<%= description %>" />
+    <meta name="author" content="<%= author %>" />
+    <meta name="keywords" content="AI solutions, cloud enterprise, automation, digital transformation, software development, consulting" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="<%= ogTitle %>" />
+    <meta property="og:description" content="<%= ogDescription %>" />
+    <meta property="og:image" content="<%= ogImage %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= ogUrl %>" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= twitterTitle %>" />
+    <meta name="twitter:description" content="<%= twitterDescription %>" />
+    <meta name="twitter:image" content="<%= twitterImage %>" />
+    <meta name="twitter:site" content="<%= twitterSite %>" />
+    <meta name="twitter:creator" content="<%= twitterCreator %>" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="<%= canonical %>" />
+
+    <!-- Google Analytics -->
+    <% if (googleAnalyticsId) { %>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=<%= googleAnalyticsId %>"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '<%= googleAnalyticsId %>');
+      </script>
+    <% } %>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/logo/logo.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Streamline Consultech Private Limited",
+      "description": "Technology-driven organization specializing in AI-powered digital agents, enterprise cloud systems, and custom business automation platforms.",
+      "url": "https://www.slconsultech.com",
+      "logo": "https://www.slconsultech.com/assets/logo/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+94-72-466-6666",
+        "contactType": "customer service",
+        "email": "info@slconsultech.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "476, Orex complex",
+        "addressLocality": "Ekala",
+        "addressCountry": "Sri Lanka",
+        "postalCode": ""
+      },
+      "sameAs": [
+        "https://linkedin.com/company/slconsultech",
+        "https://twitter.com/slconsultech",
+        "https://github.com/slconsultech"
+      ],
+      "foundingDate": "2010",
+      "numberOfEmployees": "25-50",
+      "industry": "Technology Services",
+      "services": [
+        "AI Agents & Automation",
+        "Cloud Enterprise Solutions", 
+        "Software Development & Integration",
+        "Consulting & Digital Transformation"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

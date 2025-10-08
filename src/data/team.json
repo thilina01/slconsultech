@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Thilina Ranathunga",
+    "position": "Chief Technology Officer & Co-Founder",
+    "bio": "AI Software Architect with expertise in DevOps automation, microservices, and cloud-native systems. Apache NetBeans PMC Member and open-source contributor.",
+    "image": "/assets/team/thilina.jpg",
+    "linkedin": "https://linkedin.com/in/thilina01",
+    "github": "https://github.com/thilina01",
+    "expertise": ["AI/ML", "Cloud Architecture", "DevOps", "Microservices"]
+  },
+  {
+    "name": "Sarah Johnson",
+    "position": "Chief Executive Officer",
+    "bio": "Strategic leader with 15+ years in technology consulting and digital transformation. Expert in scaling technology organizations and driving business growth.",
+    "image": "/assets/team/sarah.jpg",
+    "linkedin": "https://linkedin.com/in/sarah-johnson",
+    "expertise": ["Strategy", "Leadership", "Digital Transformation", "Business Development"]
+  },
+  {
+    "name": "Michael Chen",
+    "position": "Head of AI Solutions",
+    "bio": "AI researcher and practitioner specializing in machine learning, natural language processing, and intelligent automation systems.",
+    "image": "/assets/team/michael.jpg",
+    "linkedin": "https://linkedin.com/in/michael-chen",
+    "expertise": ["Machine Learning", "NLP", "Computer Vision", "AI Strategy"]
+  },
+  {
+    "name": "Emily Rodriguez",
+    "position": "Head of Cloud Engineering",
+    "bio": "Cloud infrastructure expert with extensive experience in enterprise-scale deployments, security, and performance optimization.",
+    "image": "/assets/team/emily.jpg",
+    "linkedin": "https://linkedin.com/in/emily-rodriguez",
+    "expertise": ["Cloud Architecture", "DevOps", "Security", "Performance"]
+  }
+]

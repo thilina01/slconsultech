@@ -24,7 +24,18 @@ import {
   Send,
   ExternalLink,
   Github,
-  Calendar
+  Calendar,
+  Globe,
+  BarChart,
+  TrendingUp,
+  Lightbulb,
+  Settings,
+  Smartphone,
+  Server,
+  Cog,
+  Brain,
+  Database,
+  Rocket
 } from 'lucide-react';
 
 // Icon mapping to avoid eval usage
@@ -53,7 +64,18 @@ export const iconMap = {
   Send,
   ExternalLink,
   Github,
-  Calendar
+  Calendar,
+  Globe,
+  BarChart,
+  TrendingUp,
+  Lightbulb,
+  Settings,
+  Smartphone,
+  Server,
+  Cog,
+  Brain,
+  Database,
+  Rocket
 };
 
 export default iconMap;

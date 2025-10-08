@@ -9,27 +9,27 @@ import { iconMap } from '../utils/iconMap';
 const AboutPage = () => {
   const values = [
     {
-      icon: Zap,
+      icon: "Zap",
       title: "Innovation and Excellence",
       description: "We continuously push the boundaries of technology to deliver cutting-edge solutions that exceed expectations."
     },
     {
-      icon: Users,
+      icon: "Users",
       title: "Client-Centric Approach",
       description: "Your success is our success. We tailor every solution to meet your specific business needs and objectives."
     },
     {
-      icon: Heart,
+      icon: "Heart",
       title: "Integrity and Trust",
       description: "We build lasting relationships based on transparency, honesty, and delivering on our promises."
     },
     {
-      icon: Globe,
+      icon: "Globe",
       title: "Continuous Learning",
       description: "We stay ahead of technology trends and continuously enhance our skills to serve you better."
     },
     {
-      icon: Users,
+      icon: "Users",
       title: "Collaborative Partnership",
       description: "We work as an extension of your team, fostering collaboration and knowledge sharing throughout the project."
     }

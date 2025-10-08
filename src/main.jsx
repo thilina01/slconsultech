@@ -14,6 +14,12 @@ import ProjectOMSKPI from "./pages/projects/ProjectOMSKPI";
 import ProjectTextBridge from "./pages/projects/ProjectTextBridge";
 import ProjectMicroservices from "./pages/projects/ProjectMicroservices";
 
+// Service pages
+import AIServicesPage from "./pages/services/AIServicesPage";
+import CloudServicesPage from "./pages/services/CloudServicesPage";
+import SoftwareDevPage from "./pages/services/SoftwareDevPage";
+import ConsultingPage from "./pages/services/ConsultingPage";
+
 import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 
@@ -28,11 +34,17 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         
-        {/* Project detail pages */}
-        <Route path="/projects/factorypro" element={<ProjectFactoryPro />} />
-        <Route path="/projects/oms-kpi" element={<ProjectOMSKPI />} />
-        <Route path="/projects/textbridge" element={<ProjectTextBridge />} />
-        <Route path="/projects/microservices" element={<ProjectMicroservices />} />
+            {/* Project detail pages */}
+            <Route path="/projects/factorypro" element={<ProjectFactoryPro />} />
+            <Route path="/projects/oms-kpi" element={<ProjectOMSKPI />} />
+            <Route path="/projects/textbridge" element={<ProjectTextBridge />} />
+            <Route path="/projects/microservices" element={<ProjectMicroservices />} />
+            
+            {/* Service detail pages */}
+            <Route path="/services/ai-agents-automation" element={<AIServicesPage />} />
+            <Route path="/services/cloud-enterprise-solutions" element={<CloudServicesPage />} />
+            <Route path="/services/software-development-integration" element={<SoftwareDevPage />} />
+            <Route path="/services/consulting-digital-transformation" element={<ConsultingPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

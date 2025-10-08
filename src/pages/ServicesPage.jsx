@@ -114,7 +114,7 @@ const ServicesPage = () => {
                   </div>
 
                   <Link 
-                    to="/contact" 
+                    to={`/services/${service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}
                     className="btn-primary w-full text-center"
                   >
                     Learn More About {service.title}
@@ -220,30 +220,32 @@ const ServicesPage = () => {
               <div className="space-y-6">
                 {[
                   {
-                    icon: Zap,
+                    icon: "Zap",
                     title: "Cutting-Edge Technology",
                     description: "We leverage the latest technologies including AI, cloud computing, and automation to deliver innovative solutions."
                   },
                   {
-                    icon: Shield,
+                    icon: "Shield",
                     title: "Enterprise-Grade Security",
                     description: "Security is built into every solution we deliver, ensuring your data and systems are protected."
                   },
                   {
-                    icon: Clock,
+                    icon: "Clock",
                     title: "Rapid Delivery",
                     description: "Our agile development process ensures faster time-to-market without compromising quality."
                   },
                   {
-                    icon: Target,
+                    icon: "Target",
                     title: "Measurable Results",
                     description: "We focus on delivering measurable business outcomes and ROI for every project we undertake."
                   }
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-primary-600" />
-                    </div>
+                ].map((item, index) => {
+                  const IconComponent = iconMap[item.icon];
+                  return (
+                    <div key={index} className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <IconComponent className="w-6 h-6 text-primary-600" />
+                      </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
                         {item.title}
@@ -253,7 +255,8 @@ const ServicesPage = () => {
                       </p>
                     </div>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 

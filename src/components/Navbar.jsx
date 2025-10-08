@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import site from '../data/site.json';
@@ -6,7 +6,9 @@ import site from '../data/site.json';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [hoverTimeout, setHoverTimeout] = useState(null);
   const location = useLocation();
+  const dropdownRef = useRef(null);
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -16,10 +18,10 @@ const Navbar = () => {
       href: '/services',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'AI Agents & Automation', href: '/services#ai-agents' },
-        { name: 'Cloud Enterprise Solutions', href: '/services#cloud-solutions' },
-        { name: 'Software Development', href: '/services#software-dev' },
-        { name: 'Consulting & Transformation', href: '/services#consulting' }
+        { name: 'AI Agents & Automation', href: '/services/ai-agents-automation' },
+        { name: 'Cloud Enterprise Solutions', href: '/services/cloud-enterprise-solutions' },
+        { name: 'Software Development & Integration', href: '/services/software-development-integration' },
+        { name: 'Consulting & Digital Transformation', href: '/services/consulting-digital-transformation' }
       ]
     },
     { name: 'Projects', href: '/projects' },
@@ -32,6 +34,30 @@ const Navbar = () => {
     }
     return location.pathname.startsWith(href);
   };
+
+  const handleMouseEnter = () => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+    setIsServicesOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsServicesOpen(false);
+    }, 150); // 150ms delay before closing
+    setHoverTimeout(timeout);
+  };
+
+  // Clean up timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+      }
+    };
+  }, [hoverTimeout]);
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -53,7 +79,12 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
-              <div key={item.name} className="relative group">
+              <div 
+                key={item.name} 
+                className="relative group"
+                onMouseEnter={item.hasDropdown ? handleMouseEnter : undefined}
+                onMouseLeave={item.hasDropdown ? handleMouseLeave : undefined}
+              >
                 <Link
                   to={item.href}
                   className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -61,8 +92,6 @@ const Navbar = () => {
                       ? 'text-primary-600 bg-primary-50'
                       : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
                   }`}
-                  onMouseEnter={() => item.hasDropdown && setIsServicesOpen(true)}
-                  onMouseLeave={() => item.hasDropdown && setIsServicesOpen(false)}
                 >
                   <span>{item.name}</span>
                   {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
@@ -71,15 +100,15 @@ const Navbar = () => {
                 {/* Dropdown Menu */}
                 {item.hasDropdown && isServicesOpen && (
                   <div 
-                    className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2"
-                    onMouseEnter={() => setIsServicesOpen(true)}
-                    onMouseLeave={() => setIsServicesOpen(false)}
+                    ref={dropdownRef}
+                    className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50"
                   >
                     {item.dropdownItems.map((dropdownItem) => (
                       <Link
                         key={dropdownItem.name}
                         to={dropdownItem.href}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary-600"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary-600 transition-colors"
+                        onClick={() => setIsServicesOpen(false)}
                       >
                         {dropdownItem.name}
                       </Link>

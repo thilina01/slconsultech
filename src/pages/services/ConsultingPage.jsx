@@ -186,9 +186,9 @@ const ConsultingPage = () => {
 
                   <Link 
                     to="/contact" 
-                    className="btn-primary w-full text-center"
+                    className="btn-primary w-full text-center whitespace-nowrap"
                   >
-                    Learn More About {service.title}
+                    Learn More
                   </Link>
                 </div>
               );

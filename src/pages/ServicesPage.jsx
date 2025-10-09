@@ -115,9 +115,9 @@ const ServicesPage = () => {
 
                   <Link 
                     to={`/services/${service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}
-                    className="btn-primary w-full text-center"
+                    className="btn-primary w-full text-center whitespace-nowrap"
                   >
-                    Learn More About {service.title}
+                    Learn More
                   </Link>
                 </div>
               );

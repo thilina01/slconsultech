@@ -130,9 +130,9 @@ const AIServicesPage = () => {
 
                   <Link 
                     to="/contact" 
-                    className="btn-primary w-full text-center"
+                    className="btn-primary w-full text-center whitespace-nowrap"
                   >
-                    Learn More About {solution.title}
+                    Learn More
                   </Link>
                 </div>
               );

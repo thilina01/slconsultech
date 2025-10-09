@@ -64,15 +64,15 @@ const Navbar = () => {
       <div className="container-max">
         <div className="flex justify-between items-center py-5">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="/assets/logo/logo.png" 
               alt="Streamline Consultech Logo" 
               className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
             />
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-gray-900">{site.title}</h1>
-              <p className="text-sm text-gray-600">Private Limited</p>
+            <div className="block">
+              <h1 className="text-lg sm:text-xl font-bold text-gray-900">{site.title}</h1>
+              <p className="text-xs sm:text-sm text-gray-600">Private Limited</p>
             </div>
           </Link>
 
